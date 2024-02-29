@@ -1,0 +1,55 @@
+﻿@page "/demo";
+@using Mesma_Button.Components;
+
+@*this is a for loop to create buttons for each counter created on line 26*@ 
+@foreach(var number in Li)
+{
+    @number.number
+
+    var index = Li.IndexOf(number);
+    <MesmaButton style="height: 50px; width: 150px" BrandColour="" title="grey button" OnButtonClick="() => ClickFunction(index)"></MesmaButton>
+}
+
+@* creates a button on line 14/17 and makes a counter on line 15/18*@
+<MesmaButton style="height: 50px; width: 150px" BrandColour="buttonRed" title="red button" OnButtonClick="ClickFunc1"></MesmaButton>
+@Counter
+
+<MesmaButton style="height: 50px; width: 150px" text="hi" BrandColour="buttonYellow" title="yellow button" OnButtonClick="ClickFunc2"></MesmaButton>
+@Counter2
+
+@code {
+    public string Text = "Hello";
+    public int Counter { get; set; }
+    public int Counter2 { get; set; }
+
+    @*creates a list for the counters*@
+    public List<IntRef> Li { get; set; } = new() { new IntRef() { number = 0 }, new IntRef() { number = 0 }, new IntRef() { number = 0 } };
+
+    @*these 3 functions on line 29/35/41 all increase its specific counter by one when its function is called*@
+    public async void ClickFunction(int index)
+    {
+        Li[index].number += 1;
+
+    }
+
+    public async void ClickFunc1()
+    {
+        Counter += 1;
+
+    }
+
+    public async void ClickFunc2()
+    {
+        Counter2 += 1;
+
+    }
+
+    @*creates a class for the list, for the for loop of buttons nad counters*@
+    public class IntRef
+    {
+        public int number { get; set; }
+    }
+
+}
+
+

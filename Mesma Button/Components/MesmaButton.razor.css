@@ -1,0 +1,101 @@
+﻿.button {
+    background: transparent;
+    border: 2px solid #CFDCE5;
+    color: #CFDCE5;
+    margin: 60px;
+    border-radius: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    transition-duration: 0.5s;
+    animation: fadeIn 2s;
+}
+
+    .button:hover {
+        background: #CFDCE5;
+        color: white;
+        transform: scale(1.1);
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+.buttonGreen {
+    border: 2px solid #52BFA2;
+    color: #52BFA2;
+}
+
+    .buttonGreen:hover {
+        background: #52BFA2;
+        color: white;
+    }
+
+.buttonYellow {
+    border: 2px solid #EAB33C;
+    color: #EAB33C;
+}
+
+    .buttonYellow:hover {
+        background: #EAB33C;
+        color: white;
+    }
+
+.buttonRed {
+    border: 2px solid #E25A74;
+    color: #E25A74;
+}
+
+    .buttonRed:hover {
+        background: #E25A74;
+        color: white;
+    }
+
+.buttonBlue {
+    border: 2px solid #24394F;
+    color: #24394F;
+}
+
+    .buttonBlue:hover {
+        background: #24394F;
+        color: white;
+    }
+
+.button:active {
+    background-color: #CFDCE5;
+    box-shadow: 0 5px gray;
+    transform: translateY(4px);
+}
+
+.buttonGreen:active {
+    background-color: #52BFA2;
+    box-shadow: 0 5px gray;
+    transform: translateY(4px);
+}
+
+.buttonYellow:active {
+    background-color: #EAB33C;
+    box-shadow: 0 5px gray;
+    transform: translateY(4px);
+}
+
+.buttonRed:active {
+    background-color: #E25A74;
+    box-shadow: 0 5px gray;
+    transform: translateY(4px);
+}
+
+.buttonBlue:active {
+    background-color: #24394F;
+    box-shadow: 0 5px gray;
+    transform: translateY(4px);
+}
+
+
+
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }

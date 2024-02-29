@@ -1,0 +1,31 @@
+﻿@*the base button is created and sets up several paremeters for future buttons*@
+<button style="@style" tabindex="0" title="@title" @onclick="ClickFunc" class="button @(!string.IsNullOrEmpty(BrandColour) ? BrandColour : "")">
+    @text
+</button>
+
+
+@code {
+    @*creates parameters so the buttons are more customisable*@
+    [Parameter]
+    public string BrandColour{ get; set; }
+
+    [Parameter]
+    public string title { get; set; }
+
+    [Parameter]
+    public string text { get; set; } = "Click me";
+
+    [Parameter]
+    public string style { get; set; }
+
+
+    public int Counter { get; set; }
+
+    [Parameter]
+    public EventCallback OnButtonClick { get; set; }
+
+    public async void ClickFunc()
+    {
+        await OnButtonClick.InvokeAsync();
+    }
+}

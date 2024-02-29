@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mesma Button", "Mesma Button\Mesma Button.csproj", "{AAAE520A-4557-4A55-B0CF-B6ADC6B70837}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAAE520A-4557-4A55-B0CF-B6ADC6B70837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAAE520A-4557-4A55-B0CF-B6ADC6B70837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAAE520A-4557-4A55-B0CF-B6ADC6B70837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAAE520A-4557-4A55-B0CF-B6ADC6B70837}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BDF67B8-6E80-4139-B03F-65CB26590E9E}
+	EndGlobalSection
+EndGlobal
